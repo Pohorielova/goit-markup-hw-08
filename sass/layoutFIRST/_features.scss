@@ -1,0 +1,50 @@
+.feature{
+    @extend %section;
+    @extend %section--no-padding;
+}
+.feature__caption{
+    @extend %visually-hidden;
+}
+.feature__box {
+    background-color: var(--secondary-white-color);
+  
+    display: flex;
+    width: 270px;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+  
+    margin-bottom: 30px;
+  }
+  
+  
+  .feature__list {
+    @extend %list;
+    display: flex;
+  }
+  
+  .feature__item {
+    width: 270px;
+  }
+  
+  .feature__item:not(:nth-child(4n)) {
+    margin-right: 30px;
+  }
+  
+  .feature__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .feature__desc {
+    color: var(--secondary-text-color);
+  
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  
