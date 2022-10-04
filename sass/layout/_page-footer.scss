@@ -1,18 +1,19 @@
 .page-footer__container {
-    // display: flex;
+    display: block;
     // align-items: baseline;
-    padding-top: 65px;
-    padding-bottom: 65px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   
   .page-footer {
     background-color: var(--primary-dark-color);
+    text-align: center;
   }
   
   
   .page-footer__logo {
     display: inline-block;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
   }
   
   .address__item {
@@ -22,11 +23,13 @@
     letter-spacing: 0.03em;
 
     &:not(:last-child) {
-      margin-bottom: 9px;
+      margin-bottom: 8px;
     }
   }
   .address{
     @extend %list;
+    text-align: center;
+    margin-bottom: 60px;
   }
   .address__link {
     @extend %link;
@@ -48,22 +51,25 @@
   }
   
   .page-footer__box-right {
-    // display: flex;
-    // flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
   }
   .page-footer__box-center {
     // display: flex;
     // flex-direction: column;
     // justify-content: center;
-    margin-left: 70px;
+    // margin-left: 70px;
   }
   .page-footer__box-left {
     // display: flex;
     // flex-direction: column;
-    margin-left: 93px;
+    // align-items: center;
+    // margin-left: 93px;
   }
   .page-footer__social{
-    margin-bottom: 0;
+    margin-bottom: 60px;
   }
   .page-footer__text{
     color: var(--clear-white-color);
@@ -75,6 +81,7 @@
     letter-spacing: 0.03em;
   
     margin-bottom: 20px;
+    text-align: center;
   }
   
   .social__link--white {
@@ -91,15 +98,18 @@
     fill: currentColor;
   }
   /* Follow-us form */
-  .form {
-    // display: flex;
-  }
+  // .form {
+  //   display: flex;
+  //   flex-direction: column;
+  //   // align-items: center;
+  
+  // }
   
   
   
   .form__input {
-    // min-width: 358px;
-    // max-height: 50px;
+    width: 100%;
+    max-height: 50px;
     padding: 15px 16px 15px;
     background-color: transparent;
     font: inherit;
@@ -109,7 +119,9 @@
     line-height: 1.25;
     letter-spacing: 0.03em;
     color: var(--transparent-white-color);
+
+    margin-bottom: 20px;
   }
-  .social__icon--right {
-    margin-left: 10px;
-  }
+  // .social__icon--right {
+  // //   margin-left: 10px;
+  // }
