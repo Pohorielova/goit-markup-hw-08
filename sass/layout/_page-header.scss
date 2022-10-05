@@ -1,4 +1,5 @@
 .page-header {
+  position: relative;
   border-bottom: 1px solid var(--border-white-color);
   background-color: var(--clear-white-color);
   padding-top: 16px;
@@ -16,15 +17,7 @@
   
 
 }
-.navigation__icon--close{
-  display:none;
-}
-.button--transparent.is-open .navigation__icon--close{
-  display: block;
-}
-.button--transparent.is-open .navigation__icon--menu{
-  display: none;
-}
+
 
 .navigation__list{
   @extend %list;
@@ -138,8 +131,8 @@
     
 }
 
-
 .contacts__icon {
   margin-right: 10px;
   fill: currentColor;
 }
+

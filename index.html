@@ -23,13 +23,6 @@
           <a href="./index.html" class="logo logo--black"
             >Web<span>Studio</span></a
           >
-          <!-- <button class="button button--transparent is-open" type="button">
-            <svg class="navigation__icon" width="40" height="40" 
-            aria-label="Перемикач мобільного меню" >
-              <use class="navigation__icon navigation__icon--close" href="./images/icons.svg#icon-menuclose"></use>
-              <use class="navigation__icon navigation__icon--menu" href="./images/icons.svg#icon-menu"></use>
-            </svg>
-          </button> -->
           <ul class="navigation__list ">
             <li class="navigation__item">
               <a href="./index.html" class="navigation__link navigation__link--current">Студія</a>
@@ -58,6 +51,51 @@
             >
           </li>
         </ul>
+        <button class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu">
+          <svg 
+         
+          width="40" 
+          height="40" 
+          aria-label="Перемикач мобільного меню" >
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg 
+          width="40" 
+          height="40" 
+          aria-label="Перемикач мобільного меню" >
+            <use href="./images/icons.svg#icon-menuclose"></use>
+          </svg>
+        </button>
+        <div>
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link menu__link--current" href="./index.html">Студия</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu menu--down">
+          <a class="menu__tell" href="tel:+380961111111">
+            +38 096 111 11 11</a>
+          <a class="menu__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <ul class="social-menu">
+            <li class=" social-menu__item">Instagram</li>
+            <li class=" social-menu__item">Twitter</li>
+            <li class=" social-menu__item">Facebook</li>
+            <li class=" social-menu__item">LinkedIn</li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -133,7 +171,7 @@
       <section class="works">
         <div class="container">
           <h2 class="works__caption">Чим ми займаємося</h2>
-          <ul class="works__list list">
+          <ul class="works__list">
             <li class="works__item">
               <img
                 class="works__img works__img--no-grap"
@@ -187,28 +225,28 @@
                 <p class="employee__title">Product Designer</p>
                 <ul class="social ">
                   <li class="social__item">
-                    <a href="" class="social__link link">
+                    <a href="" class="social__link">
                       <svg class="social__icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social__item">
-                    <a href="" class="social__link link">
+                    <a href="" class="social__link">
                       <svg class="social__icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-twitter-1"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social__item">
-                    <a href="" class="social__link link">
+                    <a href="" class="social__link">
                       <svg class="social__icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social__item">
-                    <a href="" class="social__link link">
+                    <a href="" class="social__link">
                       <svg class="social__icon" width="20" height="20">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -535,5 +573,6 @@
       </div>
     </div>
     <script src="./modal.js"></script>
+    <script src="./mobile-menu.js"></script>
   </body>
 </html>

@@ -50,13 +50,11 @@ body {
   .page-header__container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 
   .page-footer__container{
     padding-top: 65px;
     padding-bottom: 65px;
-    // @media screen and (min-width:1200px){
-    // display: flex;
-    // align-items: center;
-    // }
+   
   }
